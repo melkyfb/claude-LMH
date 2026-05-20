@@ -1,0 +1,33 @@
+{
+  "name": "lmh",
+  "description": "Local Model Helper — offload tasks to Ollama to reduce Claude token usage. Supports Intel NPU via OpenVINO.",
+  "author": {
+    "name": "melkyfb"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/session-start.js\"",
+            "timeout": 8,
+            "statusMessage": "Checking local model (Ollama)..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/prompt-submit.js\"",
+            "timeout": 3,
+            "statusMessage": "Checking for local-worthy task..."
+          }
+        ]
+      }
+    ]
+  }
+}

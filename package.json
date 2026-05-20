@@ -1,0 +1,11 @@
+{
+  "name": "claude-lmh",
+  "version": "1.0.0",
+  "description": "Local Model Helper — Claude Code plugin that offloads tasks to local Ollama models",
+  "scripts": {
+    "test": "jest --testPathPattern=tests/"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
