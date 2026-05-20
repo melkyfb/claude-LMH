@@ -1,0 +1,11 @@
+{
+  "name": "claude-LMH",
+  "description": "Local Model Helper marketplace — offload tasks to Ollama to reduce Claude token usage",
+  "plugins": [
+    {
+      "name": "lmh",
+      "description": "Local Model Helper — routes local-worthy tasks to Ollama, supports Intel NPU via OpenVINO",
+      "path": "."
+    }
+  ]
+}
