@@ -17,15 +17,19 @@ reducing token consumption on Claude (Sonnet). Optimized for Intel Core Ultra wi
 
 ## Installation
 
-```bash
-# In Claude Code
-/plugins install path/to/claude-LMH
+Add this marketplace in Claude Code:
 
-# Or copy to your Claude plugins directory
-cp -r claude-LMH ~/.claude/plugins/lmh
+```
+/marketplace add melkyfb/claude-LMH
 ```
 
-Then start a new Claude Code session — LMH activates automatically.
+Then install the plugin:
+
+```
+/plugin install lmh
+```
+
+Start a new Claude Code session — LMH activates automatically.
 
 ## First Run
 
