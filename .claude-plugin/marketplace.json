@@ -1,11 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-LMH",
   "description": "Local Model Helper marketplace — offload tasks to Ollama to reduce Claude token usage",
+  "owner": {
+    "name": "melkyfb",
+    "email": "melkysalem@gmail.com"
+  },
   "plugins": [
     {
       "name": "lmh",
       "description": "Local Model Helper — routes local-worthy tasks to Ollama, supports Intel NPU via OpenVINO",
-      "path": "."
+      "author": {
+        "name": "melkyfb"
+      },
+      "category": "development",
+      "source": ".",
+      "homepage": "https://github.com/melkyfb/claude-LMH"
     }
   ]
 }
